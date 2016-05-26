@@ -1,0 +1,11 @@
+html {
+    background:#0D4D2B  ;
+}
+canvas {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-300px;
+    margin-left:-300px;
+    z-index: 0;
+}
