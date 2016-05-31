@@ -1,0 +1,256 @@
+body {
+	margin: 0;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.topBanner {
+	height: 150px;
+	top: 0;
+	width: 100%;
+	margin: auto;
+	border: none;
+	position: fixed;
+	box-shadow: 0 0 15px 0;
+	z-index: 2;
+	cursor: default;
+}
+
+.secondBanner {
+	width: 100%;
+	height: 70px;
+	top: 150px;
+	position: fixed;
+	z-index: 1;
+	background-color: transparent;
+}
+
+.photoClipped {
+	height: 150px;
+	width: 150px;
+	position: absolute;
+	left: 20px;
+	top: 50px;
+	background-color: transparent;
+	border-radius: 150px;
+	z-index: 2;
+	box-shadow: 0 0 20px;
+	
+	-webkit-transition: box-shadow 0.3s ease-in-out;
+	-moz-transition: box-shadow 0.3s ease-in-out;
+	transition: box-shadow 0.3s ease-in-out;
+}
+
+.photoClipped:hover, .photoClipped:active {
+	box-shadow: 0 0 50px white;
+}
+
+.info {
+	left: 190;
+	vertical-align: middle;
+	display: block;
+	position: absolute;
+	bottom: 1em;
+	width: 75%;
+}
+
+.profileBrief {
+	color: ghostwhite;
+	cursor: default;
+	display: inline-block;
+	background: transparent;
+}
+
+.personName {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.wingBadge {
+	font-size: 1.2em;
+	font-style: italic;
+	float: right;
+}
+
+.wingBadge:hover {
+	font-style: normal;
+}
+
+.navlink {
+	text-decoration: none;
+	color: ghostwhite;
+	cursor: pointer;
+}
+
+.contact {
+	float: right;
+	right: 0;
+	position: relative;
+	margin-right: 1.5em;
+	margin-top: 1em;
+	border: none;
+	z-index: 1;
+	top: 160px;
+}
+
+.contact a {
+	display: inline-block;
+}
+
+.contactMail, .contactGoogle, .contactFacebook, .contactTwitter, .contactGithub, .contactBlogger {
+	display: inline-block;
+	margin-left: 2px;
+	border-radius: 40px;
+	width: 40px;
+	height: 40px;
+	overflow: visible;
+	-webkit-transition: box-shadow 0.2s ease;
+	-moz-transition: box-shadow 0.2s ease;
+	transition: box-shadow 0.2s ease;
+}
+
+.contactMail { background: url('maillogo.png'); background-position: center; background-size: contain; z-index: 2; }
+.contactFacebook { background: url('fblogo.png'); background-position: center; background-size: contain; z-index: 2; }
+.contactGoogle { background: url('googlelogo.png'); background-position: center; background-size: contain; z-index: 2; }
+.contactGithub { background: url('githublogo.png'); background-position: center; background-size: contain; z-index: 2; }
+.contactTwitter { background: url('twitterlogo.png'); background-position: center; background-size: contain; z-index: 2; }
+.contactBlogger { background: url('bloggerlogo.png'); background-position: center; background-size: contain; z-index: 2; }
+
+.contactMail:hover, .contactGoogle:hover, .contactFacebook:hover, .contactTwitter:hover, .contactGithub:hover, .contactBlogger:hover {
+	opacity: 0.9;
+	box-shadow: 0 0 10px blue;;
+}
+
+
+.container {
+	z-index: 0;
+	position: absolute;
+	top: 270px;
+	left: 5%;
+	float: left;
+	padding: 1.2em;
+	width: 40%;
+	display: block;
+	background-color: rgba(226, 226, 226, 0.42);
+	border-left: 3px solid blue;
+	margin-bottom: 10px;
+}
+
+.overview ul {
+	list-style-type: none;
+}
+.overview li {
+	display: block;
+	cursor: default;
+}
+
+.knowsAbout ul{
+	list-style-type: none;
+}
+
+.topicsofinterest {
+	max-width: 100%;
+	display: block;	
+}
+
+.caretopic {
+	display: inline-block;
+	overflow-wrap: break-word;
+	border: 1px solid grey;
+	border-radius: 5px;
+	margin: 6px;
+	padding: 5px;
+	
+}
+
+.caretopic:hover {
+	background-color: lightgrey;
+	cursor: default;
+	box-shadow: 0 0 5px;
+}
+
+.creations {
+	z-index: 0;
+	position: absolute;
+	top: 270px;
+	right: 5%;
+	/*right: 0;*/
+	float: right;
+	padding: 1.2em;
+	width: 40%;
+	display: block;
+	background-color: rgba(226, 226, 226, 0.42);
+	border-left: 3px solid blue;
+	margin-bottom: 50px;
+}
+
+
+/*project descriptions*/
+.project {
+	display: block;
+	padding: 4px;	
+	margin: 5px	;
+	background-color: #ECEAEA;
+	z-index: 1;
+	height: 1.8em;
+	overflow: hidden;
+}
+
+.project:hover, .project:active {
+	border: dimgrey solid 3px;
+	border-radius: 5px;
+	box-shadow: 0 0 20px;
+}
+
+.projectTitle {
+	font-size: 1.2em;
+	margin: 0.2em;
+	display: block;
+}
+
+.projectDescription {
+	margin: 0.2em;
+}
+
+.projectURL {
+	text-align: center;
+}
+
+.projectURL a {
+	text-decoration: none;
+	margin-left: 20px;
+}
+
+.projectURL a:hover {
+	text-decoration: underline;
+}
+
+
+/*adjustments for responsiveness*/
+@media screen and (max-width: 700px) {
+	
+	.personName {
+		font-size: 1.2em;
+	}
+	.wingBadge {
+		float: none;
+		font-size: 1em;
+	}
+	.contact {
+		float: right;
+		top: 160;
+		max-width: 50%;
+		z-index: 1;
+		position: absolute;
+	}
+	
+	.container, .creations {
+		left: 5px;
+		right: 5px;
+		width: 85%;
+		margin: auto;
+		margin-top: 5px;
+		float: none;
+		position: relative;
+	}
+	
+}
