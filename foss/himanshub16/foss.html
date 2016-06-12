@@ -1,0 +1,146 @@
+<html>
+	<head>
+		<!-- flag -->
+		<title> YOUR NAME @ Geekhaven </title> 
+		<!--<meta http-equiv="refresh" content="5" />-->
+		<link rel="icon" type="image/png" href="../favicon.png" />
+		<link rel="stylesheet" type="text/css" href="../foss.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<style>
+			.topBanner {
+				background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+			}
+			
+			.photoClipped {
+				background: url('profilePic.jpg') no-repeat center;
+				background-size: cover;
+			}
+		</style>
+	</head>
+	
+<body>
+	<div class="topBanner">
+		<div class="photoClipped"></div>
+		<div class="info">
+			<div class="profileBrief">
+				<!-- flag -->
+				<div class="personName"> Himanshu Shekhar </div>
+				<div class="designation"> Member </div>
+			</div>
+			
+			<div class="wingBadge">
+				<!-- flag --> 
+				<a href="https://geekhaven.iiita.ac.in" class="navlink" target="_blank"> GeekHaven - FOSS </a> <br /> 
+				<a href="https://iiita.ac.in" class="navlink" target="_blank"> IIIT-ALLAHABAD </a> 
+			</div>
+		</div>
+	</div>
+	
+	<div class="secondBanner">
+	</div>	
+		<div class="contact">
+			<!-- flag -->
+				<a href="mailto:irm2015006@iiita.ac.in">               					  <span class="contactMail contactbox"></span>      </a>
+				<a href="https://github.com/himanshub16/" target="_blank">                <span class="contactGithub contactbox"></span>    </a>
+				<a href="https://himanshub16.blogspot.in/" target="_blank">				  <span class="contactBlogger contactbox"></span>	</a>
+				<a href="https://facebook.com/himanshushekharb16" target="_blank">        <span class="contactFacebook contactbox"></span>  </a>
+				<a href="https://plus.google.com/+himanshushekharb16" target="_blank">    <span class="contactGoogle contactbox"></span>    </a>
+				<a href="https://twitter.com/himanshub16" target="_blank">                <span class="contactTwitter contactbox"></span>   </a>
+		</div>
+		
+	<!--</div>-->
+	
+	<div class="container">
+	<!-- flag -->
+		<div class="overview">
+			<div class="description">
+				 <strong> Things I do </strong> <br />
+				    <ul class="thingsIDo">
+						<li>Make cool open source stuff</li>
+						<li>Promote Open Source in IIITA on behalf of Geekhaven</li>
+					</ul>
+			</div>
+			
+		</div>
+		<hr />
+		<div class="detailedDescription">
+			<span class="knowsAbout"> <strong> Knows About </strong>
+				<ul> 
+					<li>C, C++, Python, Bash, Linux, System Administration (Linux) </li>
+					<li><strong>Web</strong> : HTML, CSS, JavaScript, PHP(novice) </li> 
+				</ul>
+			</span>
+		</div>
+		<hr />
+		<div class="interests">
+			<strong>Cares About</strong> <br />
+			<span class="topicsofinterest">
+				<span class="caretopic">Technology</span>
+				<span class="caretopic">Freedom</span>
+				<span class="caretopic">Environment</span>
+				<span class="caretopic">Global Warming</span>
+				<span class="caretopic">Green Earth</span>
+				<span class="caretopic">Solutions</span>
+				<span class="caretopic">Sustainable Development</span>
+				
+			</span>
+		</div>
+		
+	</div>
+	
+	<div class="creations">
+		<h3>Here are some things made by me</h3>
+		
+		<section class="project">
+			<div class="projectTitle">ProxyMan</div>
+			<div class="projectDescription">
+				CLI tool to set up system wide proxy settings on Linux. <br />
+				Written in bash. The script takes care of bashrc, apt.conf and gsettings schemas.
+			</div>
+			<div class="projectURL">
+				<a href="https://goo.gl/peXZNB" target="_blank">View the project on Github</a> <br />
+				<a href="https://goo.gl/U8EYcO" target="_blank">Another variant for Fedora</a>
+			</div>
+		</section>
+		
+		<section class="project">
+			<div class="projectTitle">python-resolver</div>
+			<div class="projectDescription">
+				Library dependency resolver for python projects. <br />
+				Checks for modules your project depends on and download if anyone is missing.
+			</div>
+			<div class="projectURL">
+				<a href="https://github.com/himanshub16/python-resolver" target="_blank">View the project on Github</a>
+			</div>
+		</section>
+		
+		<section class="project">
+			<div class="projectTitle">IPScanner</div>
+			<div class="projectDescription">
+				Network vulnerability scanner written in Python and Bash for Linux. <br />
+				Checks for IP addresses on your VLAN / LAN which have access to the internet.<br />
+				Useful for bypasssing restrictions to internet networks with access based on IP address.
+			</div>
+			<div class="projectURL">
+				<a href="https://goo.gl/peXZNB" target="_blank">View the project on Github</a>
+			</div>
+		</section>
+	</div>
+	
+	
+	<script type="text/javascript">
+		var elem = document.getElementsByClassName("project");
+		for (var i = 0; i < elem.length; i++) {
+			elem[i].addEventListener('click', changeHeight(elem[i]));
+		}
+		
+		
+		function changeHeight (elem) {
+			elem.style.height = 'auto';
+		}
+	</script>
+	
+</body>
+
+</html>
