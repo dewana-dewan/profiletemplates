@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8"/>
+    <meta name="viewport" content="width=1024" />
+<head>
+	<title>Geekhaven</title>
+
+	<script src="js/main.js"></script>
+	<style type="text/css">
+
+		body{
+			background: -webkit-gradient(radial, 50% 50%, 250, 50% 50%, 750, from(#fff), to(#efefef));
+		}
+		a{
+			color: slategrey;
+			text-decoration: none;
+			transition: color .3s;
+		}
+		a:hover{
+			color: black;
+		}
+
+		.fallback-message {
+		    font-family: sans-serif;
+		    line-height: 1.3;
+
+		    width: 780px;
+		    padding: 10px 10px 0;
+		    margin: 20px auto;
+
+		    border: 1px solid #E4C652;
+		    border-radius: 10px;
+		    background: #EEDC94;
+		}
+
+		.fallback-message p {
+		    margin-bottom: 10px;
+		}
+
+		.impress-supported .fallback-message {
+		    display: none;
+		}
+
+		.impress-enabled .step {
+		    margin: 0;
+		    opacity: 0.3;
+
+		    -webkit-transition: opacity 1s;
+		    -moz-transition:    opacity 1s;
+		    -ms-transition:     opacity 1s;
+		    -o-transition:      opacity 1s;
+		    transition:         opacity 1s;
+		}
+
+		.impress-enabled .step.active { opacity: 1 }
+
+		.impress-enabled          { pointer-events: none }
+		.impress-enabled #impress {
+			pointer-events: auto }
+
+		.norm {
+
+		  	width: 1200px;
+		}
+
+		.head1 {
+			margin: 0px;
+			margin-top: 10px;
+			font-size: 400%;
+			font-family: serif;
+		}
+		.head3 {
+			margin: 10px;
+		}
+
+		body {
+			font-family: 'Open Sans', sans-serif;
+			font-size: 30px;
+		}
+		.image_cordi{
+			float:right;
+			width: 300px;
+		}
+
+		#pre-loader{
+			background-color: white;
+			z-index: 1000;
+			position: fixed;
+			right: 0px;
+			left: 0px;
+			top: 0px;
+			bottom: 0px;
+			opacity: 1;
+			transition: opacity .6s;
+		}
+
+		#pre-loader img{
+			height: 10vh;
+			position: absolute;
+			top: 45vh;
+			bottom: 45vh;
+		}
+		.hint{
+			opacity: 0;
+			width: 90%;
+			text-align: center;
+			background-color: rgba(0, 0, 0, 0.4);
+			padding: 3px;
+			color: white;
+			border-radius: 10px;
+			border: 1px solid black;
+			animation-name: hinty;
+			animation-iteration-count: infinite;
+			animation-duration: 10s;
+		}
+		@keyframes hinty {
+			40%{
+				opacity: 0;
+			}
+			50%{
+				opacity: 1;
+			}
+			70%{
+				opacity: 1;
+			}
+			80%{
+				opacity: 0;
+			}
+		}
+		.hint h3{
+			margin: 10px;
+		}
+		.contact_links img{
+			width: 60px;
+		}
+		.mem .contact_links img{
+			width: 50px;
+		}
+
+
+	</style>
+
+</head>
+<body class="impress-not-supported" >
+	<div class="fallback-message">
+    	<p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    	<p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+	</div>
+
+	<!--main stuff here-->
+	<div id="pre-loader">
+		<center>
+			<img src="loader.gif">
+		</center>
+	</div>
+
+	<div id="impress">
+		<div id = "start_ok" class="step norm" data-x="0" data-y="0" data-z="0" data-scale="8">
+			<center>
+				<span><p class="head1">Networking wing </p><h5 class="head3"> <b>Geekhaven</b>, IIIT Allahabad</h5><hr width="60%"></span><br>
+			</center>
+			<span>
+				<h2><a href="#about_us">About Us</a></h2>
+				<h2><a href="#events">Events</a></h2>
+				<h2><a href="#coordinators">Co-ordinators</a></h2>
+				<h2><a href="#members">members</a></h2>
+			</span>
+			<center>
+				<div class="hint">
+					<h3>Use <u>Space bar</u> or <u>Arrow keys</u></h3>
+				</div>
+			</center>
+		</div>
+
+		<div id = "about_us" class="step norm" data-x="3500" data-y="5000" data-z="5000" data-rotate-y="00" data-rotate-z="90" data-scale="5">
+			<h1 class="head1">About US</h1>
+		</div>
+		<div id = "about_us_detail" class="step norm" data-x="3500" data-y="5000" data-z="5000" data-rotate-y="90" rotate-z="0" data-rotate-z="90" data-scale="3">
+			<h2>All the about us stuff</h2>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis purus non velit eleifend cursus. Morbi auctor sollicitudin sapien eu lobortis. Proin pharetra vel enim nec pharetra. Pellentesque consectetur tellus mi, placerat laoreet eros eleifend non. In hac habitasse platea dictumst.
+		</div>
+
+		<div id="events" class="step norm" data-x="6000" data-y="-5000" data-z="5000" data-rotate-y="0" data-rotate-z="90" data-rotate-z="0" data-scale="5">
+			<h1 class="head1">Events</h1>
+		</div>
+		<div id="event1" class="step norm" data-x="6000" data-y="-4500" data-z="1000" data-rotate-y="0" data-rotate-z="90" data-rotate-z="0" data-scale="3">
+			<h3>Event 1</h3>
+			<p>description     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis purus non velit eleifend cursus. Morbi auctor sollicitudin sapien eu lobortis.</p>
+		</div>
+		<div id="event2" class="step norm" data-x="6000" data-y="-4500" data-z="-4000" data-rotate-y="0" data-rotate-z="90" data-rotate-z="0" data-scale="3">
+			<h3>Event 2</h3>
+			<p>description     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis purus non velit eleifend cursus.</p>
+		</div>
+
+		<div id="coordinators" class="norm step" data-x="-9000" data-y="0" data-z="0" data-rotate-y="30" data-rotate-z="0" data-rotate-z="0" data-scale="3">
+			<h1 class="head1">Co-ordinators</h1>
+		</div>
+		<div id="cordi1" class="norm step" data-x="-9000" data-y="1000" data-z="-500" data-rotate-y="30" data-rotate-z="0" data-rotate-x="0" data-scale="2 ">
+			<img src="minion.jpg" class="image_cordi">
+			<h1 class="head2">Namea deama 1</h1>
+			<h4>About   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis</h4>
+			<div class="contact_links">
+					<img src='images/social/facebook.png'>
+					<img src='images/social/github.png'>
+					<img src='images/social/linkedin.png'>
+					<img src='images/social/twitter.png'>
+			</div>
+		</div>
+		<div id="cordi2" class="norm step" data-x="-9000" data-y="2000" data-z="500" data-rotate-y="30" data-rotate-z="0" data-rotate-x="0" data-scale="2 ">
+			<img src="minion.jpg" class="image_cordi">
+			<h1 class="head2">Namea deama 2</h1>
+			<h4>About   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis</h4>
+			<div class="contact_links">
+					<img src='images/social/facebook.png'>
+					<img src='images/social/github.png'>
+					<img src='images/social/linkedin.png'>
+					<img src='images/social/twitter.png'>
+			</div>
+		</div>
+		<div id="cordi3" class="norm step" data-x="-9000" data-y="3000" data-z="-500" data-rotate-y="30" data-rotate-z="0" data-rotate-x="0" data-scale="2">
+			<img src="minion.jpg" class="image_cordi">
+			<h1 class="head2">Namea deama 2</h1>
+			<h4>About   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis</h4>
+			<div class="contact_links">
+					<img src='images/social/facebook.png'>
+					<img src='images/social/github.png'>
+					<img src='images/social/linkedin.png'>
+					<img src='images/social/twitter.png'>
+			</div>
+		</div>
+
+		<div id="members" class="norm step" data-x="0" data-y="8000" data-z="15000" data-rotate-y="0" data-rotate-z="0" data-rotate-x="0" data-scale="1">
+			<h1 class="head1"><center>Members</center></h1>
+		</div>
+		<div id="member1" class="norm step mem" data-x="700" data-y="8000" data-z="14500" data-rotate-y="60" data-rotate-z="0" data-rotate-x="00" data-scale="1">
+			<center>
+			<img src="minion.jpg" width="300px">
+			<h1 class="head3">nameas sdfaw</h1>
+			<div class="contact_links">
+					<img src='images/social/facebook.png'>
+					<img src='images/social/github.png'>
+					<img src='images/social/linkedin.png'>
+					<img src='images/social/twitter.png'>
+			</div>
+			</center>
+		</div>
+		<div id="member2" class="norm step mem" data-x="600" data-y="8000" data-z="13800" data-rotate-y="120" data-rotate-z="0" data-rotate-x="0" data-scale="1">
+			<center>
+			<img src="minion.jpg" width="300px">
+			<h1 class="head3">nameas sdfaw</h1>
+			<div class="contact_links">
+					<img src='images/social/facebook.png'>
+					<img src='images/social/github.png'>
+					<img src='images/social/linkedin.png'>
+					<img src='images/social/twitter.png'>
+			</div>
+			</center>
+		</div>
+		<div id="member3" class="norm step mem" data-x="0" data-y="8000" data-z="13400" data-rotate-y="180" data-rotate-z="0" data-rotate-x="0" data-scale="1">
+			<center>
+			<img src="minion.jpg" width="300px">
+			<h1 class="head3">nameas sdfaw</h1>
+			<div class="contact_links">
+					<img src='images/social/facebook.png'>
+					<img src='images/social/github.png'>
+					<img src='images/social/linkedin.png'>
+					<img src='images/social/twitter.png'>
+			</div>
+			</center>
+		</div>
+		<div id="member4" class="norm step mem" data-x="-600" data-y="8000" data-z="13800" data-rotate-y="240" data-rotate-z="0" data-rotate-x="0" data-scale="1">
+			<center>
+			<img src="minion.jpg" width="300px">
+			<h1 class="head3">nameas sdfaw</h1>
+			<div class="contact_links">
+					<img src='images/social/facebook.png'>
+					<img src='images/social/github.png'>
+					<img src='images/social/linkedin.png'>
+					<img src='images/social/twitter.png'>
+			</div>
+			</center>
+		</div>
+		<div id="member5" class="norm step mem" data-x="-700" data-y="8000" data-z="14500" data-rotate-y="300" data-rotate-z="0" data-rotate-x="0" data-scale="1">
+			<center>
+			<img src="minion.jpg" width="300px">
+			<h1 class="head3">nameas sdfaw</h1>
+			<div class="contact_links">
+					<img src='images/social/facebook.png'>
+					<img src='images/social/github.png'>
+					<img src='images/social/linkedin.png'>
+					<img src='images/social/twitter.png'>
+			</div>
+			</center>
+		</div>
+
+	</div>
+
+	<script src="js/impress.js"></script>
+	<script>impress().init();</script>
+</body>
+</html>
